@@ -6,7 +6,7 @@ class MyComponent extends React.Component{
 	render(){
 		return(
 			<React.Fragment>
-				<h1>Hello from VLT team</h1>
+				<h1>Hello World</h1>
 			</React.Fragment>
 		)	
 	}
