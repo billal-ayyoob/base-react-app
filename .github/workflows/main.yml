@@ -28,7 +28,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Github Action for Yarn
-        uses: Borales/actions/setup-yarn@v2.1.0
+        uses: borales/actions/setup-yarn@v2.1.0
         with:
           cmd: install  
           
