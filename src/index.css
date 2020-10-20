@@ -11,3 +11,57 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+html, body, #root, .room {
+  height: 100%;
+  margin: 0;
+}
+.lit {
+  background-color: white;
+  color: black;
+}
+.dark {
+  background-color: black;
+  color: white;
+}
+.btn {
+  margin: 20px;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: black;
+}
+.btnInc {
+  background-color: #000000; /* Green */
+  border: 1px solid white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  box-shadow: black;
+}
+.btnDec {
+  background-color: #ffffff; /* Green */
+  border: 1px solid;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  box-shadow: black;
+}
+.temp {
+  color: rgb(4, 0, 255);
+}
+.redditScore {
+  color: rgb(4, 0, 255);
+  padding-left: 25px;
+  font-size: 26px;
+}
