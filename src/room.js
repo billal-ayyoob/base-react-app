@@ -16,8 +16,8 @@ function Room(props){
 			<br />
 			<button className="btn" onClick={() => setLit(false)}>OFF</button>
 			<br />
-			<button className="btnInc" onClick={() => setTemp(currTemp+1)}> + </button>
-			<button className="btnDec" onClick={() => setTemp(currTemp-1)}> - </button>
+			<button className="btnInc" onClick={() => setTemp(++currTemp)}> + </button>
+			<button className="btnDec" onClick={() => setTemp(--currTemp)}> - </button>
 		</div>
 	);
 }
