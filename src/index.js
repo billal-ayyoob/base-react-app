@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ReactDom from 'react-dom';
-import Room from './room';
+import { Room } from './Room.js';
 import axios from 'axios';
 import "./index.css";
 

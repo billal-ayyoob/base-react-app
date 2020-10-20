@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { Temperature } from "./Temperature.js";
+import { Brightness }from "./Brightness.js";
 
-function Room(props){
+export function Room(props){
 	const [isLit, setLit] = useState(true);
 	const brightness = isLit ? "lit" : "dark";
 
@@ -8,9 +10,9 @@ function Room(props){
 
 	return (
 		<div className={`room ${brightness}`}>
-			<h1>The room {props.roomNum} is {isLit ? 'lit' : 'dark'} at floor {props.floor}</h1>
+			<Brightness brightness={isLit} currentFloor={props.floor} roomNum={props.roomNum}/>
 			<br />
-			<h2>The room temperature is <span className="temp">{currTemp}</span>'o Celsius</h2>
+			<Temperature  temperature={currTemp}/>
 			<br />
 			<button className="btn" onClick={() => setLit(true)}>ON</button>
 			<br />
@@ -21,5 +23,3 @@ function Room(props){
 		</div>
 	);
 }
-
-export default Room;
