@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-export function RedditApi() {
+function RedditApi() {
 	const [posts, setPosts] = useState([]);
 	React.useEffect(() =>{
 		axios.get(`https://www.reddit.com/r/reactjs.json`)
@@ -23,3 +23,5 @@ export function RedditApi() {
 		</div>
 	);
 }
+
+export default RedditApi;

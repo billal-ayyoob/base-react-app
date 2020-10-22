@@ -1,17 +1,17 @@
 import React from 'react';
-import ReactDom from 'react-dom';
-import { Room } from './Room.js';
-import { RedditApi } from './RedditApi.js';
-import "./index.css";
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
 
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
-function RoomAndApi (){
-	return (
-		<div>
-			<Room roomNum="1" floor="2"/>
-			<RedditApi/>
-		</div>
-	);	
-}
-
-ReactDom.render(<RoomAndApi />, document.querySelector('#root'));
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();
